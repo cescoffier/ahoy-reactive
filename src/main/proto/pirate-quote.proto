@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "me.escoffier.pirate";
+option java_outer_classname = "QuoteProto";
+
+package helloworld;
+
+service QuoteService {
+    rpc getRandomQuote (QuoteRequest) returns (QuoteReply) {}
+}
+
+message QuoteRequest {
+}
+
+// The response message containing the greetings
+message QuoteReply {
+    string quote = 1;
+}

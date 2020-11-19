@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  database:
+    image: postgres:10.5
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: quarkus_test
+      POSTGRES_PASSWORD: quarkus_test
+      POSTGRES_DB: quarkus_test
